@@ -1,0 +1,8 @@
+<h1>Registration</h1>
+<%= form_for @user, url: user_create_path do |f| %>
+  <%= f.text_field :name %><br>
+  <%= f.text_field :password %><br>
+  <%= f.email_field :email %><br>
+  <%= f.submit "Registration" %>
+  <%= link_to "SignUp", user_new_path %>
+<% end %>

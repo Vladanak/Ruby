@@ -1,0 +1,23 @@
+<h1>Registration</h1>
+<%= form_for :user, urL: {action: "create"} do |form| %>
+  <p>
+    <%= form.label :Name %><br>
+    <%= form.text_field :Name %>
+  </p>
+ 
+  <p>
+    <%= form.label :Password %><br>
+    <%= form.password_field :Password %><br>
+    <%= form.password_field :Password %>
+  </p>
+ 
+  <p>
+    <%= form.label :Email %><br>
+    <%= form.email_field :Email %>
+  </p>
+ 
+
+  <p>
+    <%= form.submit %>
+    <a href = <%= new_path %>>Login</a>
+<% end %>
